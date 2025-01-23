@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: root
+  password: tiger
+  host: <%= ENV['DB_HOST'] || 'localhost' %>
+  port: 5433
+
+development:
+  <<: *default
+  database: google_jobs_development
+
+test:
+  <<: *default
+  database: google_jobs_test

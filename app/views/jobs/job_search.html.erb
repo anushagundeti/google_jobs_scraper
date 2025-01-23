@@ -1,0 +1,4 @@
+<h1>Recent Jobs</h1>
+<% @api_response.each do |job| %>
+  <p><%= "#{@fun_bullet_point} #{job[:title]} at #{job[:company]}: " %><%= link_to job[:link], job[:link], target: "_blank", rel: "noopener noreferrer" %></p>
+<% end %>
