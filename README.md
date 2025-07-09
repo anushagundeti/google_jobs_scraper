@@ -1,24 +1,32 @@
-# README
+# 💼 Google Jobs Scraper (Ruby on Rails + SerpAPI)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Rails application that fetches and displays the latest **Google Jobs listings** using the [SerpAPI](https://serpapi.com/).  
+It integrates with the public SerpAPI, sends job search queries, parses the JSON response, and renders the results in a clean interface.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## 📌 Features
 
-* System dependencies
+- 🔍 Search Google Jobs using SerpAPI
+- 📝 Displays job title, company, location, description, and posting age
+- 🌐 Easy-to-customize search queries
+- ⚡ Built with Ruby on Rails for fast prototyping
+- 🧼 Clean UI for browsing results
 
-* Configuration
+---
 
-* Database creation
+## 💻 Tech Stack
 
-* Database initialization
+- **Backend**: Ruby on Rails 7
+- **HTTP Client**: `HTTParty` / `Faraday`
+- **Frontend**: ERB templates / Turbo / Tailwind (optional)
+- **API**: [SerpAPI](https://serpapi.com/) (Google Jobs Engine)
 
-* How to run the test suite
+---
 
-* Services (job queues, cache servers, search engines, etc.)
+## 🚀 Getting Started
 
-* Deployment instructions
-
-* ...
+### 1. Clone the repo
+```bash
+git clone https://github.com/anushagundeti/google_jobs.git
+cd google_jobs
